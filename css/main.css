@@ -567,7 +567,7 @@ section .row span {
 	}
 }
 #projects .project-wrapper {
-	margin-bottom: 15rem;
+	margin-bottom: 9rem;
 }
 @media (max-width: 37.5em) {
 	#projects .project-wrapper {
@@ -576,7 +576,7 @@ section .row span {
 }
 #projects .project-wrapper .row {
 	margin: 0;
-	margin-bottom: 8rem;
+	margin-bottom: 6rem;
 }
 @media (max-width: 37.5em) {
 	#projects .project-wrapper .row {
@@ -612,6 +612,7 @@ section .row span {
 }
 
 .detail_point {
+	text-align: justify;
 	font-size: 1.6rem !important;
 }
 #projects .project-wrapper__text-btns {
@@ -633,11 +634,11 @@ section .row span {
 #projects .project-wrapper__image .thumbnail {
 	border: none;
 	box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4),
-		-5px -5px 15px 7px #fff;
+	-5px -5px 15px 7px #fff;
 }
 #projects .project-wrapper__image .thumbnail .img-fluid {
 	width: 60%;
-	height: auto;
+	height: 15em;
 	vertical-align: middle;
 	border-radius: 2px;
 }
@@ -649,3 +650,100 @@ section .row span {
 		transform: none;
 	}
 }
+
+/* extra */
+
+#projects .mini .project-wrapper__image .thumbnail .img-fluid {
+	width: 100% !important;
+}
+
+#projects .mini .project-wrapper__image{
+	width: 100% !important;
+}
+
+#projects .mini .project-wrapper__text-title {
+    font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+#projects .mini .project-wrapper__text-info {
+	margin-bottom: 1rem;
+}
+
+section .mini .row {
+	display: visible;
+}
+
+/* new container extra  */
+.pcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+  
+.card {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: 23%; 
+	margin: 3em;
+	margin-bottom: 1em; 
+}
+
+/* 
+@media (max-width: 75em) {
+	.card {
+		width: calc(33.33% - 100px);
+		margin: 40px; 
+	}
+} */
+
+.image {
+	width: 100%;
+	height: 17em;
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+}
+  
+.text {
+	flex: 1;
+	padding: 10px;
+}
+
+.title {
+	font-size: 1.6rem;
+	margin-bottom: 5px;
+}
+
+.info {
+	font-size: 1.2rem;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+.buttons {
+	margin-top: auto;
+	font-size: .9rem;
+}
+
+.image:hover{
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
