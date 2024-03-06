@@ -1,13 +1,3 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -19,7 +9,7 @@ Have fun creating your portfolio on this template!!! -->
 		<title>Denzil Nelson | Developer</title>
 
 		<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-		<meta name="keywords" content="[username], [name], skill" />
+		<meta name="keywords" content="MERN, denzil10" />
 
 		<!-- Improve your SEO by adding a small descrption of you -->
 		<meta name="description" content="Denzil Nelson | Web Developer" />
@@ -96,6 +86,16 @@ Have fun creating your portfolio on this template!!! -->
 		<!-- End of Google Analytics -->
 	</head>
 	<body>
+
+		<!-- Announcement Bar -->
+		<div id="announcement-bar">
+			<p>Paper on cervical fracture detection has been published in IEEE Explore <a href="https://ieeexplore.ieee.org/document/10425354">Check it out!</a></p>
+			<button class="close-btn" onclick="closeAnnouncement()">
+				<i class="fa fa-times"></i>
+			</button>
+		</div>
+		<!-- /End Announcement Bar -->
+
 		<!-- Hero Section -->
 		<div id="hero">
 			<section class="container">
@@ -321,6 +321,12 @@ Have fun creating your portfolio on this template!!! -->
 									class="cta-btn text-color-main"
 									>Code</a
 								>
+								<a
+									href="https://ieeexplore.ieee.org/document/10425354"
+									target="_blank"
+									class="cta-btn text-color-main"
+									>Paper</a
+								>
 							</div>
 						</div>
 					
@@ -509,6 +515,11 @@ Have fun creating your portfolio on this template!!! -->
 		<script>
 			document.getElementById("year").textContent =
 				new Date().getFullYear();
+		</script>
+		<script>
+			function closeAnnouncement() {
+				document.querySelector('#announcement-bar').style.display = 'none';
+			}
 		</script>
 		<script src="./javascript/vanilla-tilt.min.js"></script>
 		<script type="text/javascript" src="./javascript/valtilt.js"></script>

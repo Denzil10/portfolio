@@ -747,3 +747,49 @@ section .mini .row {
 	background-color: #0056b3;
 }
 
+
+/* Announcement bar */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#announcement-bar {
+    font-size: 48px;
+    background-color: #5b318e9c;
+    color: #ffffff;
+    padding: 5px 12px; 
+    text-align: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+	animation: blink 2s 3;
+}
+
+#announcement-bar a {
+    color: #e2dada; 
+    text-decoration: none;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #721c24; /* Close button color */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
